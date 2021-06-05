@@ -24,7 +24,7 @@ public class Contatenar {
 
         int num2 = escaner.nextInt();
         System.out.println("Por favor, digite otro número: ");
-        
+
         int box1 = escaner.nextInt();
 
         System.out.print("Resultado: ");
@@ -36,6 +36,6 @@ public class Contatenar {
         
         System.out.println(nombre + " " + num2 + " " + box1);
         
-        
+
     }
 }
