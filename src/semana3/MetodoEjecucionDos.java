@@ -9,17 +9,18 @@ package semana3;
  *
  * @author Andres
  */
-public class MetodoEjecucionUno {
+public class MetodoEjecucionDos {
     public static void main(String[] args){
-        unMetodo();
-        otroMetodo();
+        MetodoEjecucionDos z = new MetodoEjecucionDos();
+        z.unMetodo();
+        z.otroMetodo();
     }
     
-    public static void unMetodo(){
+    public void unMetodo(){
         System.out.println("bye");
     }
     
-    public static void otroMetodo(){
+    public void otroMetodo(){
         System.out.println("bye");
     }
 }

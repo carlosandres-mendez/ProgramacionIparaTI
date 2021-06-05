@@ -10,7 +10,7 @@ package semana3;
  * @author Andres
  */
 public class Metodos {
-
+    static int iva = 100;
     
     /**
      * Este metodo calcula la suma de dos numeros 
@@ -18,9 +18,9 @@ public class Metodos {
      * @param numero2
      * @return retorna un numero entero int
      */
-    public static int sumar(int numero1, int numero2){
-        int resultado;
-        resultado = numero1 + numero2;
+    public static long sumar(long numero1, long numero2){
+        long resultado;
+        resultado = numero1 + numero2 + iva;
         return resultado;
     }    
     
@@ -32,7 +32,7 @@ public class Metodos {
      */
     public static float sumar(float numero1, float numero2){
         float resultado;
-        resultado = numero1 + numero2;
+        resultado = numero1 + numero2 + iva;
         return resultado;
     }
     
@@ -42,9 +42,10 @@ public class Metodos {
      * @param numero2
      * @return
      */
-    public static int mutiplicar(int numero1, int numero2){
-        int resultado;
-        resultado = numero1 * numero2;
+    public static long multiplicar(long numero1, long numero2){
+        long resultado;
+        long mult = numero1 * numero2;
+        resultado = sumar(mult,iva);
         return resultado;
     }
     
@@ -55,9 +56,9 @@ public class Metodos {
      * @param numero3
      * @return
      */
-    public static int mutiplicar(int numero1, int numero2,  int numero3){
+    public static int multiplicar(int numero1, int numero2,  int numero3){
         int resultado;
-        resultado = numero1 * numero2 * numero3;
+        resultado = (numero1 * numero2 * numero3) + iva;
         return resultado;
     }
     
@@ -67,12 +68,12 @@ public class Metodos {
      */
     public static void main(String[] args){
         
-        int salarioBase = 1231231;
-        int bonoVentas = 2343453;
+        long salarioBase = 1231231;
+        long bonoVentas = 2343453;
         
-        float resultadoParaJefe;
+        long resultadoParaJefe;
         
-        resultadoParaJefe = sumar(salarioBase,bonoVentas);
+        resultadoParaJefe = multiplicar(salarioBase,bonoVentas);
         
         System.out.println(resultadoParaJefe);        
     }
