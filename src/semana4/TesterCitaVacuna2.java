@@ -9,12 +9,14 @@ package semana4;
  *
  * @author Andres
  */
-public class Tester {
+public class TesterCitaVacuna2 {
     public static void main(String[] args) {
-        SolucionIR4 s = new SolucionIR4();
-        double r;
-        r = s.calcularImpuesto(1000000,3);
-        System.out.println(r);
+        SolucionCitaVacuna2 solucion = new SolucionCitaVacuna2();
+
+        String mensaje;
+                
+        mensaje = solucion.obtenerCitaVacuna();
         
+        System.out.println(mensaje);
     }
 }
