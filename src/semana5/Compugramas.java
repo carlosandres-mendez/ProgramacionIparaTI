@@ -36,12 +36,17 @@ public class Compugramas {
     }
     
     public static void compugrama2() {
-        int n=7;
+        int n=12;
+        
+        for(int i=0;i < n;i++){
+            System.out.print("*");
+        }
+        System.out.println();
         
         for(int i=0;i < n;i++){
             
             for(int j=0;j < n;j++){
-                if(i==0 || i==(n-1) || j==0 || j==(n-1) || j==i){
+                if(i==0 || i==(n-1) || j==0 || j==(n-1) || i==(n-j-1) || i==j){
                     System.out.print("*");
                 }
                 else{
@@ -52,6 +57,9 @@ public class Compugramas {
             
         }
         
-
+        for(int i=0;i < n;i++){
+            System.out.print("*");
+        }
+        System.out.println();
     }
 }

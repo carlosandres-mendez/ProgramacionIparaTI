@@ -49,7 +49,7 @@ public class CalculadoraAvanzada {
         for (int i = 0; i < cantNumUsuarioDigita; i++) {
             System.out.println("Por favor, digite un numero:");
             int num = escaner.nextInt();
-            listaOrdenNormal += " - "+num;
+            listaOrdenNormal = listaOrdenNormal + " - " + num; 
             listaInvertida = num + " - "+ listaInvertida; 
         }
         System.out.println("Lista orden normal: "+listaOrdenNormal);

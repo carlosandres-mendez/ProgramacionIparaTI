@@ -48,7 +48,7 @@ public class ExCuatriI2021 {
                     indCovid = escaner.nextBoolean();
                     if(indCovid)
                         contPersCovid++;
-
+                    
                     System.out.println("Tiene antecedentes?");
                     indAntecedentes = escaner.nextBoolean();
                     System.out.println("Digite el nivel de salud (# del 1-10)");
