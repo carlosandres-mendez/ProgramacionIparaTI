@@ -187,4 +187,25 @@ public class ExCuatriII2021Solucion1 {
         return resultado;
     }
     
+    public static double tasainteres(int cantidad) {
+        Scanner s = new Scanner(System.in);
+
+        int monto = 0;
+        double promedio;
+        double ajuste;
+        int cantidadTemp=cantidad;
+
+        while (cantidadTemp > 0) {
+            System.out.println("Digite el monto: ");
+            monto = s.nextInt();
+            monto = monto + monto;
+            cantidadTemp--;
+        }
+
+        promedio = monto / cantidad;
+        ajuste = promedio / 100000;
+
+        return ajuste;
+    }
+    
 }
