@@ -26,5 +26,7 @@ public class Tester {
         Calculadora calc = new Calculadora();
         resultado = calc.promedio(num1, num2);
         System.out.println("Resultado es: "+resultado); 
+        
+        Calculadora calc2 = new Calculadora();
     }
 }
