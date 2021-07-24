@@ -17,13 +17,14 @@ public class Tester {
     public static void main(String[] args) {
         double tasa = 0.5;
         
-        Repaso repasoHoy = new Repaso();
-        double impuestoPagar = repasoHoy.calcularImpuesto(3, 1000000,tasa);
+       // Repaso repasoHoy = new Repaso();
+       // double impuestoPagar = repasoHoy.calcularImpuesto(3, 1000000,tasa);
         
-        Scanner escaner = new Scanner(System.in);
-        int ssss = escaner.nextInt();
+       // Scanner escaner = new Scanner(System.in);
+       // int ssss = escaner.nextInt();
         
-  
+        Short nuevoConsecutivo = 3;
+        System.out.println(String.format("%04d", nuevoConsecutivo));
         
     } 
 }
