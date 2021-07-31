@@ -16,6 +16,7 @@ public class Persona {
     String nombre;
     String apellido1;
     String apellido2;
+    Direccion direccion;
     
     //***** Comportamientos *******
     public void hablar(){
@@ -101,6 +102,14 @@ public class Persona {
 
     public void setApellido2(String apellido2) {
         this.apellido2 = apellido2;
+    }
+
+    public Direccion getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(Direccion direccion) {
+        this.direccion = direccion;
     }
  
 }
