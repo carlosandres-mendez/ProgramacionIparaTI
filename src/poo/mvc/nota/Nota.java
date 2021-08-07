@@ -3,9 +3,8 @@ package poo.mvc.nota;
 
 public class Nota {
 
-    double[] arregloNotas;
-    int indice;
-    String ejemplo;
+    private double[] arregloNotas;
+    private int indice;
 
     public Nota(int cantidadDeEstudiantes) {
         arregloNotas = new double[cantidadDeEstudiantes];
@@ -17,7 +16,10 @@ public class Nota {
         
             try {
                 arregloNotas[indice++] = notaEstudiante;
-               
+                
+                
+                //arregloNotas[indice] = notaEstudiante;
+                //indice = indice + 1;
 
             } catch (ArrayIndexOutOfBoundsException ae) {
                 System.out.println("demasiados datos para el vector de quices");

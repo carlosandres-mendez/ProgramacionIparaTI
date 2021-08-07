@@ -1,9 +1,8 @@
 package poo.mvc.nota;
 
 public class NotaControlador {
-    boolean modoGrafico =true;
-    Nota nota = new Nota(2);
-    NotaVista nv = new NotaVista(nota);
+    private Nota nota = new Nota(2);
+    private NotaVista nv = new NotaVista(nota);
     
     public void iniciar() {
         int op;

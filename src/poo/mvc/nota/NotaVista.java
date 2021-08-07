@@ -5,7 +5,7 @@ import javax.swing.JTextArea;
 
 public class NotaVista {
 
-    Nota nota;
+    private Nota nota;
 
     public NotaVista(Nota notaInstanciada) {
         this.nota = notaInstanciada;
