@@ -10,6 +10,10 @@ public class NotaVista {
     public NotaVista(Nota notaInstanciada) {
         this.nota = notaInstanciada;
     }
+    
+    public int leaTamanoArreglo() {
+        return Integer.parseInt(JOptionPane.showInputDialog("Digite la cantidad de estudiantes."));
+    }
 
     public void leaNota() {
         double notaDigitada;
@@ -21,7 +25,7 @@ public class NotaVista {
 
     public void muestreNotas() {
         JTextArea jt = new JTextArea();
-        for (int i = 0; i < nota.getIndex(); i++) {
+        for (int i = 0; i < nota.getIndice(); i++) {
             jt.append(nota.getNota(i) + "\n");
         }
         JOptionPane.showMessageDialog(null, jt);

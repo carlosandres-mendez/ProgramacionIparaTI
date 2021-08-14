@@ -31,7 +31,7 @@ public class Nota {
         } 
     }
 
-    public int getIndex() {
+    public int getIndice() {
         return indice;
     }
 
@@ -39,4 +39,11 @@ public class Nota {
         return arregloNotas[i];
     }
 
+    public double[] getArregloNotas() {
+        return arregloNotas;
+    }
+
+    public void setArregloNotas(double[] arregloNotas) {
+        this.arregloNotas = arregloNotas;
+    }
 }
