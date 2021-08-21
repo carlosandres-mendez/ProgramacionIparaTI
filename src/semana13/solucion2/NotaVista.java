@@ -1,6 +1,5 @@
 package semana13.solucion2;
 
-import poo.mvc.nota.*;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 
