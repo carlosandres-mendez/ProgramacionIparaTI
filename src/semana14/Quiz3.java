@@ -19,9 +19,19 @@ public class Quiz3 {
         System.out.println("false");
       }
     }
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
        Short i = 1222, j = 1222;
        if (i == j) {
+            System.out.println("true");
+       } else {
+        System.out.println("false");
+      }
+    }
+    
+    //Solucion
+    public static void main(String[] args) {
+       Short i = 1222, j = 1222;
+       if (i.equals(j)) {
             System.out.println("true");
        } else {
         System.out.println("false");

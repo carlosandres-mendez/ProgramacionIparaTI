@@ -5,6 +5,8 @@
  */
 package semana13.solucion2;
 
+import java.util.Objects;
+
 /**
  *
  * @author Andres
@@ -32,6 +34,30 @@ public class Estudiante {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Estudiante other = (Estudiante) obj;
+        if (!Objects.equals(this.carne, other.carne)) {
+            return false;
+        }
+        return true;
     }
     
     
